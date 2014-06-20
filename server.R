@@ -39,7 +39,7 @@ shinyServer(function(input, output) {
   })
   
   
-  # The output$summary depends on the datasetInput reactive expression, 
+  # The output$pairplot depends on the datasetInput reactive expression, 
   # so will be re-executed whenever datasetInput is invalidated
   # (i.e. whenever the input$dataset changes)
   output$pairplot <- renderPlot({
